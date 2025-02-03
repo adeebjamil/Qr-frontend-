@@ -4,6 +4,7 @@ import EmployeeForm from './components/EmployeeForm';
 import QRCodeDisplay from './components/QRCodeDisplay';
 import EmployeeCard from './components/EmployeeCard';
 import EmployeeDetail from './components/EmployeeDetail';
+import Footer from './components/Footer';
 
 function App() {
   const [employeeData, setEmployeeData] = useState(null);
@@ -17,7 +18,7 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen bg-gray-100 py-8 px-4 flex flex-col items-center">
-        <h1 className="text-4xl font-bold mb-8 text-gray-800">Employee Management</h1>
+        <h1 className="text-4xl font-bold mb-8 text-gray-800">Lovosis Technology Pvt. Ltd.</h1>
         <Routes>
           <Route
             path="/"
@@ -39,6 +40,7 @@ function App() {
           />
           <Route path="/employee/:id" element={<EmployeeDetail />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

@@ -9,6 +9,10 @@ const EmployeeForm = ({ onSubmit }) => {
     department: '',
     phone: '',
     address: '',
+    permanentAddress: '',
+    bloodGroup: '',
+    dob: '',
+    officeId: '',
     image: null,
   });
 
@@ -100,6 +104,38 @@ const EmployeeForm = ({ onSubmit }) => {
           value={formData.address}
           onChange={handleChange}
           placeholder="Address"
+          className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+        <input
+          type="text"
+          name="permanentAddress"
+          value={formData.permanentAddress}
+          onChange={handleChange}
+          placeholder="Permanent Address"
+          className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+        <input
+          type="text"
+          name="bloodGroup"
+          value={formData.bloodGroup}
+          onChange={handleChange}
+          placeholder="Blood Group"
+          className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+        <input
+          type="date"
+          name="dob"
+          value={formData.dob}
+          onChange={handleChange}
+          placeholder="Date of Birth"
+          className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+        <input
+          type="text"
+          name="officeId"
+          value={formData.officeId}
+          onChange={handleChange}
+          placeholder="Office ID"
           className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
         <input

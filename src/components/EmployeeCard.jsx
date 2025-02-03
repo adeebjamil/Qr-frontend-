@@ -4,7 +4,7 @@ const EmployeeCard = ({ employee }) => {
       <div className="flex flex-col items-center">
         {employee.image && (
           <img
-            src={`${import.meta.env.VITE_API_URL}/${employee.image}`}
+            src={`${import.meta.env.VITE_API_URL}/${employee.image.replace(/\\/g, '/')}`}
             alt="Employee"
             className="w-32 h-32 rounded-full mb-4"
           />
@@ -24,9 +24,6 @@ const EmployeeCard = ({ employee }) => {
         </p>
         <p className="text-sm mb-2 text-gray-600">
           <strong>Phone:</strong> {employee.phone}
-        </p>
-        <p className="text-sm mb-2 text-gray-600">
-          <strong>Address:</strong> {employee.address}
         </p>
       </div>
     </div>
