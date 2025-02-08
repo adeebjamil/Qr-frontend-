@@ -46,7 +46,7 @@ const EmployeeDetail = () => {
               <div className="relative -mt-16 text-center px-6">
                 {employee.image ? (
                   <img
-                    src={`${import.meta.env.VITE_API_URL}/${employee.image}`}
+                    src={`${import.meta.env.VITE_API_URL}/uploads/${employee.image}`}
                     alt={employee.name}
                     className="w-32 h-32 mx-auto rounded-xl object-cover ring-4 ring-white shadow-lg"
                   />

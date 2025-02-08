@@ -24,7 +24,6 @@ const QRCodeDisplay = ({ qrData }) => {
 
   return (
     <div className="mt-8 text-center">
-      <h2 className="text-2xl font-bold mb-4 text-gray-800">Lovosis Technology Pvt . Ltd</h2>
       <div ref={qrRef} className="inline-block p-4 bg-white rounded-lg shadow-md">
         <QRCode value={qrData} />
       </div>

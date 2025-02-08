@@ -5,6 +5,7 @@ import QRCodeDisplay from './components/QRCodeDisplay';
 import EmployeeCard from './components/EmployeeCard';
 import EmployeeDetail from './components/EmployeeDetail';
 import Footer from './components/Footer';
+import EmployeeList from './components/EmployeeList';
 
 function App() {
   const [employeeData, setEmployeeData] = useState(null);
@@ -39,6 +40,7 @@ function App() {
             }
           />
           <Route path="/employee/:id" element={<EmployeeDetail />} />
+          <Route path="/employees" element={<EmployeeList />} />
         </Routes>
         <Footer />
       </div>
